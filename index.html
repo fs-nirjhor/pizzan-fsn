@@ -54,7 +54,7 @@
               />
             </svg>
           </div>
-          <button class="btn bg-red-500 text-white">
+          <button class="btn bg-red-600 text-white">
             Book A Table
           </button>
         </div>
@@ -76,7 +76,7 @@
 
     <main>
       <!-- Food Categories  -->
-      <section id="category" class="mt-20 text-center">
+      <section id="category" class="mt-20 text-center relative">
         <div class="md:container md:mx-auto">
           <h4 class="cursive-header">Best Food For Family</h4>
           <h2 class="section-header">Choose Your Best Category</h2>
@@ -107,13 +107,21 @@
             </div>
           </div>
         </div>
+        <img class="absolute top-0 left-20 z-[-1]" src="./img/asset17.png" alt="moving" />
       </section>
 
       <!-- About Us  -->
-      <section id="about" class="mt-20 text-start">
+      <section id="about" class="mt-20 text-start relative">
         <div class="md:container md:mx-auto">
           <div class="grid grid-cols-2 items-center justify-center">
-            <img class="object-cover w-full px-10" src="./img/asset29.png" alt="food" />
+            <div class="px-10 relative">
+            <img class="object-cover w-full" src="./img/asset29.png" alt="food" />
+            <div class="absolute bottom-0 right-20 bg-red-600 rounded-full p-10 text-center">
+               <h2 class="text-5xl font-extrabold mb-3 text-white">25+</h2>
+               <p class="body-text text-white">Years Experience <br> Our Company</p>
+               <img src="./img/asset31.png" alt="peoples" class="object-cover w-2/3 mx-auto my-3">
+            </div>
+            </div>
             <div>
               <h4 class="cursive-header">About Company</h4>
               <h2 class="section-header">
@@ -143,7 +151,7 @@
                   </ul>
              <div class="flex justify-evenly items-center">
                <div class="mt-10">
-               <button class="btn bg-red-500 text-white" >ABOUT MORE <i class="fi fi-br-arrow-right ml-2"></i></button>
+               <button class="btn bg-red-600 text-white" >ABOUT MORE <i class="fi fi-br-arrow-right ml-2"></i></button>
                </div>
                <div class="grid grid-cols-7 mt-10 items-center">
                  <img src="./img/asset33.png" alt="CEO" class="object-cover w-full col-span-2">
@@ -158,6 +166,9 @@
             </div>
           </div>
         </div>
+         <img class="absolute top-0 right-20 z-[-1] " src="./img/asset27.png" alt="moving" />
+         <img class="absolute left-20 bottom-52 z-[-1] " src="./img/asset28.png" alt="moving" />
+         <img class="absolute bottom-0 left-52 z-[-1] " src="./img/asset30.png" alt="moving" />
       </section>
       
     </main>

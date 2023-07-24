@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply px-5 py-4 rounded-md uppercase;
+    @apply px-5 py-4 rounded-md font-bold uppercase;
   }
   .section-header {
     @apply text-6xl font-extrabold capitalize my-5 text-black leading-relaxed;
