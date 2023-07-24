@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizzan</title>
+    <link rel="stylesheet" href="./tailwind.css" />
+    <!-- Flaticon CDN  -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    
+  </head>
+  <body>
+    <header
+      class="bg-black bg-[url('/img/bg-destop1.jpeg')] h-[835px] bg-cover bg-center z-0"
+    >
+      <nav
+        class="text-white flex uppercase justify-between items-center py-8 container mx-auto z-10"
+      >
+        <img src="./img/nav_logo.svg" alt="logo" />
+        <ul class="flex gap-4 text-xl font-bold">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-5">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-10 h-10"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-10 h-10"
+              fill="currentColor"
+              class="bi bi-cart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+          </div>
+          <button class="btn bg-red-500 text-white">
+            Book A Table
+          </button>
+        </div>
+      </nav>
+      <hr />
+      <section class="relative">
+        <div class="top-0 left-0 bg-[#000000fa] opacity-50 h-[700px]"></div>
+        <div
+          class="text-white justify-center text-center flex flex-col items-center absolute inset-0"
+        >
+          <p class="text-[44px] font-semibold">Special Fast Food Resturant</p>
+          <h1 class="uppercase font-extrabold text-9xl">
+            Chicken Fry <br />
+            with souce
+          </h1>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- Food Categories  -->
+      <section id="category" class="mt-20 text-center">
+        <div class="md:container md:mx-auto">
+          <h4 class="cursive-header">Best Food For Family</h4>
+          <h2 class="section-header">Choose Your Best Category</h2>
+          <div class="grid grid-cols-6 gap-5 mt-16 overflow-scroll">
+            <div class="col-span-1 border-4 rounded-3xl p-10">
+              <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
+              <h5 class="card-header">Vegetables</h5>
+            </div>
+            <div class="col-span-1 border-4 rounded-3xl p-10">
+              <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
+              <h5 class="card-header">Vegetables</h5>
+            </div>
+            <div class="col-span-1 border-4 rounded-3xl p-10">
+              <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
+              <h5 class="card-header">Vegetables</h5>
+            </div>
+            <div class="col-span-1 border-4 rounded-3xl p-10">
+              <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
+              <h5 class="card-header">Vegetables</h5>
+            </div>
+            <div class="col-span-1 border-4 rounded-3xl p-10">
+              <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
+              <h5 class="card-header">Vegetables</h5>
+            </div>
+            <div class="col-span-1 border-4 rounded-3xl p-10">
+              <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
+              <h5 class="card-header">Vegetables</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Us  -->
+      <section id="about" class="mt-20 text-start">
+        <div class="md:container md:mx-auto">
+          <div class="grid grid-cols-2 items-center justify-center">
+            <img class="object-cover w-full px-10" src="./img/asset29.png" alt="food" />
+            <div>
+              <h4 class="cursive-header">About Company</h4>
+              <h2 class="section-header">
+                We Always trying quality healthy food
+              </h2>
+              <p class="body-text">
+                Implies that the restaurant prioritizes the delivery of high
+                quality and delicious meals to its customers.
+              </p>
+              <div class="p-10 mt-10 rounded-lg bg-red-50 grid grid-cols-5">
+                <img
+                  class="object-cover w-full col-span-1"
+                  src="./img/asset32.svg"
+                  alt="award"
+                />
+                <div class="col-span-4 pl-10">
+                  <h5 class="card-header">Awards Winning</h5>
+                  <p class="body-text">
+                    Highlighting the exceptional qualities and Accomplishments
+                    that set them apart
+                  </p>
+                </div>
+              </div>
+             <ul class="body-text font-semibold mx-auto mt-10">
+                    <li><i class="fi fi-br-check text-red-600 font-extrabold mx-3"></i>We're Experience in serve food food restaurants</li>
+                    <li><i class="fi fi-br-check text-red-600 font-extrabold mx-3"></i>Recipe Management And Menu planning</li>
+                  </ul>
+             <div class="flex justify-evenly items-center">
+               <div class="mt-10">
+               <button class="btn bg-red-500 text-white" >ABOUT MORE <i class="fi fi-br-arrow-right ml-2"></i></button>
+               </div>
+               <div class="grid grid-cols-7 mt-10 items-center">
+                 <img src="./img/asset33.png" alt="CEO" class="object-cover w-full col-span-2">
+                 <div class="col-span-5 pl-5">
+                   <h5 class="card-header">
+                     Ronald Richard
+                   </h5>
+                   <p class="body-text font-semibold">Founder CEO</p>
+                 </div>
+               </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+  </body>
+</html>

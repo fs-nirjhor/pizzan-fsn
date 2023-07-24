@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply px-5 py-4 rounded-md uppercase;
+  }
+  .section-header {
+    @apply text-6xl font-extrabold capitalize my-5 text-black leading-relaxed;
+  }
+  .cursive-header {
+    @apply text-5xl font-extrabold text-red-600 capitalize font-[cursive];
+  }
+  .card-header {
+    @apply text-3xl font-bold text-black mb-3;
+  }
+  .body-text {
+     @apply text-2xl text-black leading-relaxed;
+  }
+}
