@@ -11,7 +11,7 @@
   </head>
   <body>
     <header
-      class="bg-black bg-[url('/img/bg-destop1.jpeg')] h-[835px] bg-cover bg-center z-0"
+      class="bg-black bg-[url('/img/bg-destop1.jpeg')] h-[835px] bg-cover bg-center z-0 overflow-hidden"
     >
       <nav
         class="text-white flex uppercase justify-between items-center py-8 container mx-auto z-10"
@@ -77,46 +77,58 @@
     <main>
       <!-- Food Categories  -->
       <section id="category" class="mt-20 text-center relative">
-        <div class="md:container md:mx-auto">
+        <div class="section-px">
           <h4 class="cursive-header">Best Food For Family</h4>
           <h2 class="section-header">Choose Your Best Category</h2>
-          <div class="grid grid-cols-6 gap-5 mt-16 overflow-scroll">
-            <div class="col-span-1 border-4 rounded-3xl p-10">
+          <div class="flex gap-5 py-10 overflow-x-auto scroll-snap-x-mandatory">
+            <div class=" border-4 rounded-3xl p-10">
               <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
               <h5 class="card-header">Vegetables</h5>
             </div>
-            <div class="col-span-1 border-4 rounded-3xl p-10">
+            <div class=" border-4 rounded-3xl p-10">
               <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
               <h5 class="card-header">Vegetables</h5>
             </div>
-            <div class="col-span-1 border-4 rounded-3xl p-10">
+            <div class=" border-4 rounded-3xl p-10">
               <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
               <h5 class="card-header">Vegetables</h5>
             </div>
-            <div class="col-span-1 border-4 rounded-3xl p-10">
+            <div class=" border-4 rounded-3xl p-10">
               <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
               <h5 class="card-header">Vegetables</h5>
             </div>
-            <div class="col-span-1 border-4 rounded-3xl p-10">
+            <div class=" border-4 rounded-3xl p-10">
               <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
               <h5 class="card-header">Vegetables</h5>
             </div>
-            <div class="col-span-1 border-4 rounded-3xl p-10">
+            <div class=" border-4 rounded-3xl p-10">
+              <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
+              <h5 class="card-header">Vegetables</h5>
+            </div>
+            <div class=" border-4 rounded-3xl p-10">
+              <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
+              <h5 class="card-header">Vegetables</h5>
+            </div>
+            <div class=" border-4 rounded-3xl p-10">
+              <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
+              <h5 class="card-header">Vegetables</h5>
+            </div>
+            <div class=" border-4 rounded-3xl p-10">
               <img class="object-cover w-full mb-5" src="./img/asset23.png" alt="food" />
               <h5 class="card-header">Vegetables</h5>
             </div>
           </div>
         </div>
-        <img class="absolute top-0 left-20 z-[-1]" src="./img/asset17.png" alt="moving" />
+        <img class="absolute top-0 left-20 -z-10" src="./img/asset17.png" alt="moving" />
       </section>
 
       <!-- About Us  -->
       <section id="about" class="mt-20 text-start relative">
-        <div class="md:container md:mx-auto">
-          <div class="grid grid-cols-2 items-center justify-center">
-            <div class="px-10 relative">
+        <div class="section-px">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center justify-center">
+            <div class="relative">
             <img class="object-cover w-full" src="./img/asset29.png" alt="food" />
-            <div class="absolute bottom-0 right-20 bg-red-600 rounded-full p-10 text-center">
+            <div class="md:absolute bottom-0 right-20 bg-red-600 rounded-full mt-10 p-10 text-center">
                <h2 class="text-5xl font-extrabold mb-3 text-white">25+</h2>
                <p class="body-text text-white">Years Experience <br> Our Company</p>
                <img src="./img/asset31.png" alt="peoples" class="object-cover w-2/3 mx-auto my-3">
@@ -131,13 +143,13 @@
                 Implies that the restaurant prioritizes the delivery of high
                 quality and delicious meals to its customers.
               </p>
-              <div class="p-10 mt-10 rounded-lg bg-red-50 grid grid-cols-5">
+              <div class="p-10 mt-10 rounded-lg bg-red-50 grid grid-cols-1 md:grid-cols-5 gap-10 justify-center items-center">
                 <img
                   class="object-cover w-full col-span-1"
                   src="./img/asset32.svg"
                   alt="award"
                 />
-                <div class="col-span-4 pl-10">
+                <div class="col-span-4">
                   <h5 class="card-header">Awards Winning</h5>
                   <p class="body-text">
                     Highlighting the exceptional qualities and Accomplishments
@@ -145,30 +157,30 @@
                   </p>
                 </div>
               </div>
-             <ul class="body-text font-semibold mx-auto mt-10">
+             <ul class="body-text font-semibold md:ml-28 mt-10">
                     <li><i class="fi fi-br-check text-red-600 font-extrabold mx-3"></i>We're Experience in serve food food restaurants</li>
                     <li><i class="fi fi-br-check text-red-600 font-extrabold mx-3"></i>Recipe Management And Menu planning</li>
                   </ul>
-             <div class="flex justify-evenly items-center">
-               <div class="mt-10">
-               <button class="btn bg-red-600 text-white" >ABOUT MORE <i class="fi fi-br-arrow-right ml-2"></i></button>
-               </div>
-               <div class="grid grid-cols-7 mt-10 items-center">
+             <div class="flex flex-col lg:flex-row justify-evenly items-center">
+               <div class="grid grid-cols-1 md:grid-cols-7 gap-5 mt-10 justify-center items-center">
                  <img src="./img/asset33.png" alt="CEO" class="object-cover w-full col-span-2">
-                 <div class="col-span-5 pl-5">
-                   <h5 class="card-header">
+                 <div class="col-span-5">
+                   <h5 class="card-header mb-1">
                      Ronald Richard
                    </h5>
                    <p class="body-text font-semibold">Founder CEO</p>
                  </div>
                </div>
+               <div class="mt-10 lg:order-first">
+               <button class="btn bg-red-600 text-white" >ABOUT MORE <i class="fi fi-br-arrow-right ml-2"></i></button>
+               </div>
              </div>
             </div>
           </div>
         </div>
-         <img class="absolute top-0 right-20 z-[-1] " src="./img/asset27.png" alt="moving" />
-         <img class="absolute left-20 bottom-52 z-[-1] " src="./img/asset28.png" alt="moving" />
-         <img class="absolute bottom-0 left-52 z-[-1] " src="./img/asset30.png" alt="moving" />
+         <img class="absolute top-0 right-20 -z-10 " src="./img/asset27.png" alt="..." />
+         <img class="absolute left-20 bottom-52 -z-10 " src="./img/asset28.png" alt="moving" />
+         <img class="absolute bottom-0 left-52 -z-10 " src="./img/asset30.png" alt="moving" />
       </section>
       
     </main>
