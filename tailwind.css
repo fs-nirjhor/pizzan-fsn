@@ -6,6 +6,12 @@
   .btn {
     @apply px-5 py-4 rounded-md font-bold uppercase;
   }
+  .category-card {
+    @apply border-4 rounded-3xl p-10 hover:bg-[url('./img/asset20.png')] bg-bottom bg-no-repeat ;
+  }
+}
+
+@layer utilities {
   .section-header {
     @apply text-6xl font-extrabold capitalize my-5 text-black leading-relaxed;
   }
@@ -21,14 +27,4 @@
   .section-px {
     @apply mx-5 md:container md:mx-auto;
   }
-  .category-card {
-    @apply border-4 rounded-3xl p-10 hover:bg-[url('./img/asset20.png')] bg-bottom bg-no-repeat ;
-  }
-  .menu-header {
-    @apply text-2xl font-extrabold font-black ;
-  }
-  .menu-text {
-    @apply text-lg ;
-  }
-
 }
