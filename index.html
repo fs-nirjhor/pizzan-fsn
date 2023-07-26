@@ -5,78 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizzan</title>
     <link rel="stylesheet" href="./tailwind.css" />
-    <!-- Flaticon CDN  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css"
-    />
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+      
   </head>
   <body>
     <!-- Nav & Hero area -->
-    <header
-      class="bg-black bg-[url('/img/bg-destop1.jpeg')] h-[835px] bg-cover bg-center z-0 overflow-hidden"
-    >
+    <header class="bg-[url('/img/bg-destop1.jpeg')] bg-cover bg-center">
+      <div class="bg-black/60">
       <nav
-        class="text-white flex uppercase justify-between items-center py-8 container mx-auto z-10"
+        class="text-white flex uppercase justify-between items-center py-8 section-px"
       >
         <img src="./img/nav_logo.svg" alt="logo" />
-        <ul class="flex gap-4 text-xl font-bold">
+        <ul class="hidden lg:flex gap-4 text-xl font-bold">
           <li><a href="#">Home</a></li>
           <li><a href="#">Menu</a></li>
           <li><a href="#">Shop</a></li>
           <li><a href="#">Pages</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <div class="flex items-center gap-5">
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="1.5"
-              stroke="currentColor"
-              class="w-10 h-10"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-              />
-            </svg>
-          </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-10 h-10"
-              fill="currentColor"
-              class="bi bi-cart"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
-              />
-            </svg>
-          </div>
+        <div class="hidden lg:flex items-center gap-5">
+          <i class="bi bi-search text-4xl"></i>
+          <i class="bi bi-cart text-4xl"></i>
           <button class="btn bg-rose-600 text-white">Book A Table</button>
         </div>
+        <details class="lg:hidden open:text-blue-500">
+        <summary class="list-none">
+          <i class="bi bi-list text-4xl font-extrabold bg-rose-600 px-5 py-3 rounded"></i>
+          </summary>
+        <div class="absolute top-0 left-0 z-50 rounded-sm leading-loose bg-white text-black shadow-md h-screen">
+         <img src="./img/nav_logo.svg" alt="logo" class="bg-blue-200 w-full p-10"/>
+          <ul class="text-xl p-10">
+        <li><a href="#">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Pages</a></li>
+          <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </details>
       </nav>
-      <hr />
-      <section class="relative">
-        <div class="top-0 left-0 bg-[#000000fa] opacity-50 h-[700px]"></div>
-        <div
-          class="text-white justify-center text-center flex flex-col items-center absolute inset-0"
-        >
-          <p class="text-[44px] font-semibold">Special Fast Food Resturant</p>
-          <h1 class="uppercase font-extrabold text-9xl">
+      <section id="hero-area" class="text-white text-center py-28 md:py-48">
+          <p class="cursive-header text-white">Special Fast Food Resturant</p>
+          <h1 class="uppercase font-extrabold text-6xl md:text-9xl my-5">
             Chicken Fry <br />
             with souce
           </h1>
-        </div>
       </section>
+      </div>
     </header>
-
+    
     <main>
       <!-- Food Categories  -->
       <section id="category" class="mt-20 text-center relative">
@@ -159,7 +137,7 @@
           </div>
         </div>
         <img
-          class="absolute top-0 left-20 -z-10 animate-bounce-slow"
+          class="absolute top-0 left-2 md:left-20 -z-10 animate-bounce-slow"
           src="./img/asset17.png"
           alt="moving"
         />
@@ -220,13 +198,13 @@
               <ul class="body-text font-semibold md:ml-28 mt-10">
                 <li>
                   <i
-                    class="fi fi-br-check text-rose-600 font-extrabold mx-3"
+                    class="bi bi-check-lg card-header text-rose-600 font-extrabold mx-3"
                   ></i
                   >We're Experience in serve food food restaurants
                 </li>
                 <li>
                   <i
-                    class="fi fi-br-check text-rose-600 font-extrabold mx-3"
+                    class="bi bi-check-lg card-header text-rose-600 font-extrabold mx-3"
                   ></i
                   >Recipe Management And Menu planning
                 </li>
@@ -249,7 +227,7 @@
                 </div>
                 <div class="mt-10 lg:order-first">
                   <button class="btn bg-rose-600 text-white">
-                    ABOUT MORE <i class="fi fi-br-arrow-right ml-2"></i>
+                    ABOUT MORE <i class="bi bi-arrow-right ml-2"></i>
                   </button>
                 </div>
               </div>
@@ -257,12 +235,12 @@
           </div>
         </div>
         <img
-          class="absolute top-0 right-20 -z-10 animate-bounce-slow"
+          class="absolute top-0 right-2 md:right-20 -z-10 animate-bounce-slow"
           src="./img/asset27.png"
           alt="..."
         />
         <img
-          class="absolute left-20 bottom-52 -z-10 animate-bounce-slow"
+          class="absolute left-2 md:left-20 bottom-52 -z-10 animate-bounce-slow"
           src="./img/asset28.png"
           alt="moving"
         />
@@ -296,11 +274,11 @@
                       <p class="text-lg truncate">Grilling Churrasco Meat</p>
                       <p class="text-lg truncate">
                         <span class="text-rose-600">
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-rs-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
                         </span>
                         4k reviews 
                       </p>
@@ -316,11 +294,11 @@
                       <p class="text-lg truncate">Grilling Churrasco Meat</p>
                       <p class="text-lg truncate">
                         <span class="text-rose-600">
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-rs-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
                         </span>
                         4k reviews 
                       </p>
@@ -336,11 +314,11 @@
                       <p class="text-lg truncate">Grilling Churrasco Meat</p>
                       <p class="text-lg truncate">
                         <span class="text-rose-600">
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-rs-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
                         </span>
                         4k reviews 
                       </p>
@@ -356,11 +334,11 @@
                       <p class="text-lg truncate">Grilling Churrasco Meat</p>
                       <p class="text-lg truncate">
                         <span class="text-rose-600">
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-rs-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
                         </span>
                         4k reviews 
                       </p>
@@ -376,11 +354,11 @@
                       <p class="text-lg truncate">Grilling Churrasco Meat</p>
                       <p class="text-lg truncate">
                         <span class="text-rose-600">
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-rs-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
                         </span>
                         4k reviews 
                       </p>
@@ -396,11 +374,11 @@
                       <p class="text-lg truncate">Grilling Churrasco Meat</p>
                       <p class="text-lg truncate">
                         <span class="text-rose-600">
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-ss-star"></i>
-                          <i class="fi fi-rs-star"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star"></i>
                         </span>
                         4k reviews 
                       </p>
@@ -484,12 +462,12 @@
           </div>
         </div>
         <img
-          class="absolute top-0 left-20 -z-10 animate-bounce-slow"
+          class="absolute top-0 left-2 md:left-20 -z-10 animate-bounce-slow"
           src="./img/asset41.png"
           alt="..."
         />
         <img
-          class="absolute top-0 right-20 -z-10 animate-bounce-slow"
+          class="absolute top-0 right-2 md:right-20 -z-10 animate-bounce-slow"
           src="./img/asset30.png"
           alt="moving"
         />
