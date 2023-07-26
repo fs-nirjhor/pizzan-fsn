@@ -10,16 +10,16 @@
     @apply border-4 rounded-3xl p-10 hover:bg-[url('./img/asset20.png')] bg-bottom bg-no-repeat;
   }
   .section-header {
-    @apply text-6xl font-extrabold capitalize my-5 text-black leading-relaxed;
+    @apply text-3xl md:text-6xl font-bold capitalize my-5 text-black leading-relaxed;
   }
   .cursive-header {
-    @apply text-5xl font-extrabold text-rose-500 capitalize font-[cursive];
+    @apply text-3xl md:text-6xl font-extrabold text-rose-500 capitalize font-[cursive];
   }
   .card-header {
-    @apply text-3xl font-bold text-black mb-3;
+    @apply text-xl md:text-3xl font-bold text-black mb-3;
   }
   .body-text {
-    @apply text-2xl text-black leading-relaxed;
+    @apply text-lg md:text-2xl text-black leading-relaxed;
   }
   .section-px {
     @apply mx-5 md:container md:mx-auto;
