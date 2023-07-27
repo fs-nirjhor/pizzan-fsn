@@ -4,7 +4,7 @@
 
 @layer components {
   .btn {
-    @apply px-5 py-4 rounded-md font-bold uppercase;
+    @apply px-5 py-4 rounded-md font-bold text-center uppercase;
   }
   .category-card {
     @apply border-4 rounded-3xl p-10 hover:bg-[url('./img/asset20.png')] bg-bottom bg-no-repeat w-72;
