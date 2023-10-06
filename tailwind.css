@@ -21,7 +21,7 @@
   .body-text {
     @apply text-lg md:text-2xl text-black leading-relaxed;
   }
-  .section-px {
+  .section-width {
     @apply mx-5 md:container md:mx-auto;
   }
 }
